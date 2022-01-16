@@ -7,6 +7,7 @@ alias S="shutdown now"
 alias ba="nano ~/.bash_aliases"
 
 # Programs
+alias o="xdg-open"
 alias q="source ranger"
 alias bat="batcat"
 alias ffmpeg="ffmpeg -hide_banner"
