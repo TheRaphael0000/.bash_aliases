@@ -11,6 +11,9 @@ alias t="tree -L 2"
 # Edit files
 alias ba="nano ~/.bash_aliases; source ~/.bash_aliases"
 
+# List
+alias la="ls -la"
+
 # Programs
 alias rm="gio trash"
 alias o="xdg-open"
