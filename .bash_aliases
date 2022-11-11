@@ -62,7 +62,6 @@ alias ef="trans en:fr -b -I"
 
 #Network
 alias pg="ping google.com"
-alias ps="ping theraphael0000.ch"
 
 #SSH
 alias cs='ssh root@theraphael0000.ch'
