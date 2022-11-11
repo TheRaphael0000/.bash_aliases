@@ -2,25 +2,44 @@
 alias U="sudo apt update -y && sudo apt upgrade -y"
 alias R="reboot"
 alias S="shutdown now"
+alias US="shutdown -c"
+alias UD="sudo dnf update -y"
+alias path="echo $PATH | tr ":" "\n""
+alias k1="kill %1"
+
+#Print
+alias balek='figlet -ct -f Roman'
 
 # Navigation
 alias cd..="cd .."
 alias q="source ranger"
-alias t="tree -L 2"
+alias wl='watch -n 0.1 ls -lh'
+alias t='tree -L'
+alias t2='t 2'
+alias t3='t 3'
+alias bh='history'
 
 # Edit files
 alias ba="nano ~/.bash_aliases; source ~/.bash_aliases"
 
 # List
 alias la="ls -la"
+alias lm='ls /mnt/*'
 
 # Programs
+alias so="sudo xdg-open"
+alias o="xdg-open"
+alias e="nano"
+alias q="source ranger"
+alias a="atom ."
+alias x="exit"
 alias rm="gio trash"
 alias o="xdg-open"
 alias bat="batcat"
 alias ffmpeg="ffmpeg -hide_banner"
 alias ffprobe="ffprobe -hide_banner"
 alias tts="spd-say"
+alias topdf="soffice --headless --convert-to pdf"
 
 # Python related
 alias p="python -q"
@@ -40,3 +59,14 @@ alias gd="git diff HEAD"
 # Translations
 alias fe="trans fr:en -b -I"
 alias ef="trans en:fr -b -I"
+
+#Network
+alias pg="ping google.com"
+alias ps="ping theraphael0000.ch"
+
+#SSH
+alias cs='ssh root@theraphael0000.ch'
+
+#Touchpad
+alias te="gsettings set org.gnome.desktop.peripherals.touchpad send-events enabled"
+alias td="gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled"
