@@ -1,4 +1,4 @@
-# System
+#System
 alias U="sudo apt update -y && sudo apt upgrade -y"
 alias R="reboot"
 alias S="shutdown now"
@@ -14,9 +14,7 @@ alias balek='figlet -ct -f Roman'
 alias cd..="cd .."
 alias q="source ranger"
 alias wl='watch -n 0.1 ls -lh'
-alias t='tree -L'
-alias t2='t 2'
-alias t3='t 3'
+alias t="tmux"
 alias bh='history'
 
 # Edit files
@@ -27,6 +25,7 @@ alias la="ls -la"
 alias lm='ls /mnt/*'
 
 # Programs
+alias c="code ."
 alias so="sudo xdg-open"
 alias o="xdg-open"
 alias e="nano"
@@ -40,6 +39,7 @@ alias ffmpeg="ffmpeg -hide_banner"
 alias ffprobe="ffprobe -hide_banner"
 alias tts="spd-say"
 alias topdf="soffice --headless --convert-to pdf"
+alias d="cd ~/dev"
 
 # Python related
 alias p="python -q"
@@ -62,6 +62,7 @@ alias ef="trans en:fr -b -I"
 
 #Network
 alias pg="ping google.com"
+alias ipecho="curl icanhazip.com"
 
 #SSH
 alias cs='ssh root@theraphael0000.ch'
@@ -69,3 +70,5 @@ alias cs='ssh root@theraphael0000.ch'
 #Touchpad
 alias te="gsettings set org.gnome.desktop.peripherals.touchpad send-events enabled"
 alias td="gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled"
+
+export EDITOR=nano
