@@ -23,6 +23,7 @@ alias ba="nano ~/.bash_aliases; source ~/.bash_aliases"
 # List
 alias la="ls -la"
 alias lm='ls /mnt/*'
+alias showpasswd="column /etc/passwd -ts:"
 
 # Programs
 alias c="code ."
