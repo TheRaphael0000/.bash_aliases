@@ -3,17 +3,21 @@
 }
 
 0000_path() {
-    echo "$FG[250]%~"
+  echo "$FG[250]%~"
 }
 
 0000_user() {
-    echo "$FG[197]%n$FG[007]@$FG[197]%m$FG[007]"
+  echo "$FG[197]%n$FG[007]@$FG[197]%m$FG[007]"
 }
 
 0000_terraform() {
-    ZSH_THEME_TF_PROMPT_PREFIX=""
-    ZSH_THEME_TF_PROMPT_SUFFIX=""
-    echo "$FG[005]$(tf_prompt_info)$FG[007]"
+  ZSH_THEME_TF_PROMPT_PREFIX=""
+  ZSH_THEME_TF_PROMPT_SUFFIX=""
+  echo "$FG[005]$(tf_prompt_info)$FG[007]"
+}
+
+0000_time() {
+  echo "[%*]"
 }
 
 0000_precmd () {
@@ -21,7 +25,7 @@
 }
 
 PROMPT='> $FG[197]#$FG[015] '
-RPROMPT='$(0000_terraform) $(0000_git)'
+RPROMPT='$(0000_terraform) $(0000_git) $(0000_time)'
 
 autoload -U add-zsh-hook
 add-zsh-hook precmd 0000_precmd
