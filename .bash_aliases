@@ -26,6 +26,7 @@ alias lm='ls /mnt/*'
 alias showpasswd="column /etc/passwd -ts:"
 
 # Programs
+alias n="nautilus"
 alias c="code ."
 alias so="sudo xdg-open"
 alias o="xdg-open"
@@ -67,6 +68,7 @@ alias ipecho="curl icanhazip.com"
 
 #SSH
 alias cs='ssh root@theraphael0000.ch'
+alias proxy='ssh -D 9090 -N root@theraphael0000.ch'
 
 #Touchpad
 alias te="gsettings set org.gnome.desktop.peripherals.touchpad send-events enabled"
