@@ -42,6 +42,7 @@ alias ffprobe="ffprobe -hide_banner"
 alias tts="spd-say"
 alias topdf="soffice --headless --convert-to pdf"
 alias d="cd ~/dev"
+alias dc="docker compose"
 
 # Python related
 alias p="python -q"
