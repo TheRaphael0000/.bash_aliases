@@ -47,6 +47,7 @@ alias d="cd ~/dev"
 alias p="python -q"
 alias pi="ipython --no-confirm-exit --quiet --no-banner"
 alias pipi="pip install"
+alias penv="source venv/bin/activate"
 
 # Git
 alias gs="git status -s"
